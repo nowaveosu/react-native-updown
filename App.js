@@ -21,7 +21,7 @@ export default function App() {
   }
   return (
     <LinearGradient
-      colors={["#ddb52f", "#3c0923"]}
+      colors={["#3c0923", "#ddb52f"]}
       style={styles.rootScreen}
     >
       <ImageBackground
