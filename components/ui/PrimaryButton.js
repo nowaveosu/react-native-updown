@@ -1,5 +1,5 @@
 import { View, Text, Pressable, StyleSheet } from "react-native";
-import Colors from "../constants/colors";
+import Colors from "../../constants/colors";
 // react native에는 상속계념이 없다
 function PrimaryButton({ children, onPress }) {
 	return (
