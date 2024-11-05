@@ -15,7 +15,7 @@ function generateRandomBetween(min, max, exclude) {
 
 function GameScreen({ userNumber }) {
 	const initialGuess = generateRandomBetween(1, 100, userNumber);
-	const [currentGuess, setCurrentGuess] = useState();
+	const [currentGuess, setCurrentGuess] = useState(initialGuess);
 	return (
 		<View style={styles.screen}>
 			<Title>Opponent's Guess</Title>
