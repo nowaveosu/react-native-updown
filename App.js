@@ -20,7 +20,7 @@ export default function App() {
 		<StartGameScreen onPickNumber={pickedNumberHandler} />
 	);
 	if (userNumber) {
-		screen = <GameScreen />;
+		screen = <GameScreen userNumber={userNumber} />;
 	}
 	return (
 		<LinearGradient
