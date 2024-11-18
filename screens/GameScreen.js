@@ -4,6 +4,7 @@ import Title from "../components/ui/Title";
 import NumberContainer from "../components/game/NumberContainer.js";
 import Primarybutton from "../components/ui/PrimaryButton.js";
 import Card from "../components/ui/Card.js";
+import InstructionText from "../components/ui/InstructionText.js";
 
 function generateRandomBetween(min, max, exclude) {
 	const rndNum = Math.floor(Math.random() * (max - min)) + min;
@@ -56,7 +57,7 @@ function GameScreen({ userNumber, onGameOver }) {
 			<Title>Opponent's Guess</Title>
 			<NumberContainer>{currentGuess}</NumberContainer>
 			<Card>
-				<Text>Higher or lower?</Text>
+				<InstructionText>Higher or lower?</InstructionText>
 				<View>
 					<Primarybutton
 						onPress={nextGuessHandler.bind(this, "lower")}
