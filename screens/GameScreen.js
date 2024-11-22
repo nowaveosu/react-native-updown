@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { View, Text, StyleSheet, Alert } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
+
 import Title from "../components/ui/Title";
 import NumberContainer from "../components/game/NumberContainer.js";
 import Primarybutton from "../components/ui/PrimaryButton.js";
@@ -68,7 +70,11 @@ function GameScreen({ userNumber, onGameOver }) {
 								"lower"
 							)}
 						>
-							-
+							<Ionicons
+								name="remove-outline"
+								size={24}
+								color="white"
+							/>
 						</Primarybutton>
 					</View>
 					<View style={styles.buttonContainer}>
@@ -78,7 +84,11 @@ function GameScreen({ userNumber, onGameOver }) {
 								"greater"
 							)}
 						>
-							+
+							<Ionicons
+								name="add-outline"
+								size={24}
+								color="white"
+							/>
 						</Primarybutton>
 					</View>
 				</View>
