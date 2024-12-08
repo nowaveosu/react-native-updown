@@ -10,9 +10,13 @@ import StartGameScreen from "./screens/StartGameScreen";
 import GameScreen from "./screens/GameScreen";
 import Colors from "./constants/colors";
 import GameOverScreen from "./screens/GameOverScreen";
+import { useFonts } from "expo-font";
+
 export default function App() {
 	const [userNumber, setUserNumber] = useState();
 	const [gameIsOver, setGameIsOver] = useState(true);
+
+	useFonts({});
 
 	function pickedNumberHandler(pickedNumber) {
 		setUserNumber(pickedNumber);
