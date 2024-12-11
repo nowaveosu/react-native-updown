@@ -1,6 +1,12 @@
-import { Text } from "react-native";
+import { View, Image } from "react-native";
+import Title from "../components/ui/Title";
 
 function GameOverScreen() {
-	return <Text>Game is Over!</Text>;
+	return (
+		<View>
+			<Title>GAME OVER!</Title>
+			<Image></Image>
+		</View>
+	);
 }
 export default GameOverScreen;
