@@ -1,6 +1,6 @@
 import { View, Image, StyleSheet, Text } from "react-native";
 import Title from "../components/ui/Title";
-import { Colors } from "react-native/Libraries/NewAppScreen";
+import Colors from "../constants/colors";
 import PrimaryButton from "../components/ui/PrimaryButton";
 function GameOverScreen({
 	roundsNumber,
